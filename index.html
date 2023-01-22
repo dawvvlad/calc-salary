@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="modal hide">
+        <div class="modalContent">
+            <a class="closeBtn">&#10006;</a>
+            <ul>
+                <li class="manualTxt">Дробные числа пишутся через точку (например: 168.12)</li>
+                <li class="manualTxt">Калькулятор не считает праздничные дни</li>
+                <li class="manualTxt">Калькулятор считает "чистую" зарплату</li>
+                <li class="manualTxt">Калькулятор не вычитает аванс</li>
+                <li class="manualTxt">Для получения данных для расчета обратитесь к НО или ДМ</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="ress">
+        <h1>Ваша зарплата за месяц (после вычета НДФЛ):</h1>
+        <h2>(Здесь будет результат)</h2>
+    </div>
+    <div class="inputs">
+        <p class="label">Количество часов сотрудника:</p>
+        <input type="text" placeholder="Количество часов сотрудника:" name="personHours" value="0" class="txt">
+
+        <p class="label">Оборот магазина:</p>
+        <input type="text" placeholder="Оборот магазина" name="TO" value="0" class="txt">
+
+        <p class="label">% с продаж магазина (например: 1.09):</p>
+        <input type="text" placeholder="% с продаж магазина" name="percent" value="0" class="txt">
+
+        <p class="label">Кол-во бригадных часов:</p>
+        <input type="text" placeholder="Кол-во бригадных часов" name="brigade" value="0" class="txt">
+
+        <p class="label">DIS:</p>
+        <input type="text" placeholder="DIS" name="dis" value="0" class="txt">
+        
+
+
+        <button class="button">
+            рассчитать зп
+        </button>
+        <button type="button" class="manualBtn">Подсказка</button>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
